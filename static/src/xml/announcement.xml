@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<templates id="template" xml:space="preserve">
+    <t t-name="WebClient.announcement_bar">
+        <div class="openerp" id="announcement_bar_table">
+            <table class="oe_webclient">
+                <tr>
+		    <td colspan="2" class="announcement_bar">
+                        Welcome to MyOdoo
+		    </td>
+                </tr>
+            </table>
+        </div>
+    </t>
+
+    <t t-extend="UserMenu" >
+        <t t-jquery="ul.dropdown-menu" t-operation="replace">
+            <ul class="dropdown-menu">
+                <li><a href="#" data-menu="settings">Preferences</a></li>
+                <li><a href="#" data-menu="about">About Odoo</a></li>
+                <li><a href="#" data-menu="help">Help</a></li>
+                <li><a href="#" data-menu="logout">Log out</a></li>
+            </ul>
+        </t>
+    </t>
+</templates>
+

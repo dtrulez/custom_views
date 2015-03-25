@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- vim:fdn=3:
+-->
+<openerp>
+    <data>
+        <template id="menu_secondary" inherit_id="web.menu_secondary">
+	    <xpath expr="//div[@class='oe_footer']" position="replace">
+		<div class="oe_footer">
+		</div>
+	    </xpath>
+	</template>
+
+        <template id="login" inherit_id="web.login">
+	    <xpath expr="//t[@t-call='web.database_select']" position="replace">
+	    </xpath>
+	</template>
+
+        <template id="login_layout" inherit_id="web.login_layout">
+	    <xpath expr="//div[@class='oe_single_form_footer']" position="replace">
+		<div class="oe_single_form_footer">
+		</div>
+	    </xpath>
+	</template>
+    </data>
+</openerp>
